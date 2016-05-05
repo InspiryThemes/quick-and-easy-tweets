@@ -46,7 +46,9 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 			echo $args['before_title'] . $title . $args['after_title'];
 		}
 
-		// Get the tweets.
+		/*
+		 * Get Tweets
+		 */
 		$tweets = $this->get_tweets( $username, $limit, $oauth_access_token, $oauth_access_token_secret, $consumer_key, $consumer_secret );
 
 		if ( $tweets ) {
@@ -59,7 +61,8 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 
 			?>
 			<style type="text/css">
-				.qaet-tweets { }
+				.qaet-tweet small{ opacity: 0.5; }
+				.qaet-tweet small:hover{ opacity: 0.8; }
 			</style>
 			<?php
 
@@ -68,10 +71,17 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 			echo '<div class="qaet-tweets">';
 			foreach ( $tweets as $tweet ) {
 				$result = preg_replace( $patterns, $replace, $tweet->text );
-				echo '<div class="tweet">';
-					echo '<p class="text">' . $result . '</p>';
-					echo '<div class="time">' . $this->tweet_time( $tweet->created_at ) . '</div>';
-				echo '</div>';
+				?>
+				<div class="qaet-tweet">
+					<p class="text">
+						<?php  echo $result; ?>
+						<br>
+						<small>
+							<a target="_blank" href="<?php echo esc_url( 'http://twitter.com/' . $tweet->user->screen_name ); ?>"><?php echo esc_html( $this->tweet_time( $tweet->created_at ) ); ?></a>
+						</small>
+					</p>
+				</div>
+				<?php
 			}
 			echo '</div>';
 
@@ -255,14 +265,21 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 } // class Quick_And_Easy_Tweets
 
 
-
-if ( ! function_exists( 'register_quick_and_easy_tweets_widget' ) ) {
-	/**
-	 * Register Quick and Easy Tweets Widget
-	 */
-	function register_quick_and_easy_tweets_widget() {
-		register_widget( 'Quick_And_Easy_Tweets' );
-	}
-
-	add_action( 'widgets_init', 'register_quick_and_easy_tweets_widget' );
+/**
+ * Register Quick and Easy Tweets Widget
+ */
+function register_quick_and_easy_tweets_widget() {
+	register_widget( 'Quick_And_Easy_Tweets' );
 }
+
+add_action( 'widgets_init', 'register_quick_and_easy_tweets_widget' );
+
+
+/**
+ * Load plugin text domain.
+ */
+function qaet_load_textdomain() {
+	load_plugin_textdomain( 'qaet', false, plugin_basename( dirname( __FILE__ ) ) . '/languages/' );
+}
+
+add_action( 'plugins_loaded', 'qaet_load_textdomain' );
