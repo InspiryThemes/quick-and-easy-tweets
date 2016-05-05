@@ -46,9 +46,7 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 			echo $args['before_title'] . $title . $args['after_title'];
 		}
 
-		/*
-		 * Get Tweets
-		 */
+		/* Get Tweets */
 		$tweets = $this->get_tweets( $username, $limit, $oauth_access_token, $oauth_access_token_secret, $consumer_key, $consumer_secret );
 
 		if ( $tweets ) {
@@ -58,13 +56,6 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 			$replace = array( '<a href="$1">$1</a>', '<a href="http://twitter.com/$1">@$1</a>' );
 
 			ob_start();
-
-			?>
-			<style type="text/css">
-				.qaet-tweet small{ opacity: 0.5; }
-				.qaet-tweet small:hover{ opacity: 0.8; }
-			</style>
-			<?php
 
 			echo ob_get_clean();
 
@@ -109,44 +100,51 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 			<label for="<?php echo $this->get_field_id( 'title' ); ?>">
 				<?php echo __( 'Title', 'qaet' ) . ':'; ?>
 			</label>
-			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php if(isset($title)){echo esc_attr( $title );} ?>" />
+			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>"
+			       type="text" value="<?php if(isset($title)){echo esc_attr( $title );} ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'twitter_username' ); ?>">
 				<?php echo __( 'Twitter Username', 'qaet' ) . ':'; ?>
 			</label>
-			<input class="widefat" id="<?php echo $this->get_field_id( 'twitter_username' ); ?>" name="<?php echo $this->get_field_name( 'twitter_username' ); ?>" type="text" value="<?php if(isset($twitter_username)){echo esc_attr( $twitter_username );} ?>" />
+			<input class="widefat" id="<?php echo $this->get_field_id( 'twitter_username' ); ?>" name="<?php echo $this->get_field_name( 'twitter_username' ); ?>"
+			       type="text" value="<?php if(isset($twitter_username)){echo esc_attr( $twitter_username );} ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'update_count' ); ?>">
 				<?php echo __( 'Number of Tweets to Display', 'qaet' ) . ':'; ?>
 			</label>
-			<input class="widefat" id="<?php echo $this->get_field_id( 'update_count' ); ?>" name="<?php echo $this->get_field_name( 'update_count' ); ?>" type="number" value="<?php if(isset($update_count)){echo esc_attr( $update_count );} ?>" />
+			<input class="widefat" id="<?php echo $this->get_field_id( 'update_count' ); ?>" name="<?php echo $this->get_field_name( 'update_count' ); ?>"
+			       type="number" value="<?php if(isset($update_count)){echo esc_attr( $update_count );} ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'consumer_key' ); ?>">
 				<?php echo __( 'Consumer Key', 'qaet' ) . ':'; ?>
 			</label>
-			<input class="widefat" id="<?php echo $this->get_field_id( 'consumer_key' ); ?>" name="<?php echo $this->get_field_name( 'consumer_key' ); ?>" type="text" value="<?php if(isset($consumer_key)){echo esc_attr( $consumer_key );} ?>" />
+			<input class="widefat" id="<?php echo $this->get_field_id( 'consumer_key' ); ?>" name="<?php echo $this->get_field_name( 'consumer_key' ); ?>"
+			       type="text" value="<?php if(isset($consumer_key)){echo esc_attr( $consumer_key );} ?>" />
 			<small> <a target="_blank" href="https://apps.twitter.com/app/new">Click here to create new twitter application</a> to get your Consumer Key, Consumer Secret, Access Token and Access Token Secret.</small>
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'consumer_secret' ); ?>">
 				<?php echo __( 'Consumer Secret', 'qaet' ) . ':'; ?>
 			</label>
-			<input class="widefat" id="<?php echo $this->get_field_id( 'consumer_secret' ); ?>" name="<?php echo $this->get_field_name( 'consumer_secret' ); ?>" type="text" value="<?php if(isset($consumer_secret)){echo esc_attr( $consumer_secret );} ?>" />
+			<input class="widefat" id="<?php echo $this->get_field_id( 'consumer_secret' ); ?>" name="<?php echo $this->get_field_name( 'consumer_secret' ); ?>"
+			       type="text" value="<?php if(isset($consumer_secret)){echo esc_attr( $consumer_secret );} ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'oauth_access_token' ); ?>">
 				<?php echo __( 'Access Token', 'qaet' ) . ':'; ?>
 			</label>
-			<input class="widefat" id="<?php echo $this->get_field_id( 'oauth_access_token' ); ?>" name="<?php echo $this->get_field_name( 'oauth_access_token' ); ?>" type="text" value="<?php if(isset($oauth_access_token)){echo esc_attr( $oauth_access_token );} ?>" />
+			<input class="widefat" id="<?php echo $this->get_field_id( 'oauth_access_token' ); ?>" name="<?php echo $this->get_field_name( 'oauth_access_token' ); ?>"
+			       type="text" value="<?php if(isset($oauth_access_token)){echo esc_attr( $oauth_access_token );} ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'oauth_access_token_secret' ); ?>">
 				<?php echo __( 'Access Token Secret', 'qaet' ) . ':'; ?>
 			</label>
-			<input class="widefat" id="<?php echo $this->get_field_id( 'oauth_access_token_secret' ); ?>" name="<?php echo $this->get_field_name( 'oauth_access_token_secret' ); ?>" type="text" value="<?php if(isset($oauth_access_token_secret)){echo esc_attr( $oauth_access_token_secret );} ?>" />
+			<input class="widefat" id="<?php echo $this->get_field_id( 'oauth_access_token_secret' ); ?>" name="<?php echo $this->get_field_name( 'oauth_access_token_secret' ); ?>"
+			       type="text" value="<?php if(isset($oauth_access_token_secret)){echo esc_attr( $oauth_access_token_secret );} ?>" />
 		</p>
 		<?php
 	}
@@ -177,7 +175,7 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 
 	/**
 	 * Get Tweets using OAuth Twitter API
-	 * 
+	 *
 	 * @param $username
 	 * @param $limit
 	 * @param $oauth_access_token
@@ -199,8 +197,12 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 		return $tweets;
 	}
 
+
 	/**
 	 * To make the tweet time more human friendly
+	 *
+	 * @param $time
+	 * @return string|void
 	 */
 	public function tweet_time( $time ) {
 		// Get current timestamp.
@@ -286,3 +288,21 @@ function qaet_load_textdomain() {
 }
 
 add_action( 'plugins_loaded', 'qaet_load_textdomain' );
+
+
+/**
+ * Plugin Styles
+ */
+function qaet_styles() {
+	?>
+	<style type="text/css">
+		.qaet-tweet small {
+			opacity: 0.5;
+		}
+		.qaet-tweet small:hover {
+			opacity: 0.8;
+		}
+	</style>
+	<?php
+}
+add_action( 'wp_head', 'qaet_styles' );
