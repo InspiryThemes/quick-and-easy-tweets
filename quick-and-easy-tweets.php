@@ -175,29 +175,32 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 		return $instance;
 	}
 
-
+	/**
+	 * Get Tweets using OAuth Twitter API
+	 * 
+	 * @param $username
+	 * @param $limit
+	 * @param $oauth_access_token
+	 * @param $oauth_access_token_secret
+	 * @param $consumer_key
+	 * @param $consumer_secret
+	 * @return API|array|mixed|object
+	 */
 	public function get_tweets( $username, $limit, $oauth_access_token, $oauth_access_token_secret,  $consumer_key, $consumer_secret ) {
-
 		$cacheKey = $username . ' -recent-' . $limit . '-tweets';
-
 		$cached = get_transient( $cacheKey );
 		if ( false !== $cached ) {
 			return $cached;
 		}
-
 		include( plugin_dir_path( __FILE__ ) . 'twitteroauth/twitteroauth.php' );
-
 		$twitterOAuth = new TwitterOAuth( $consumer_key, $consumer_secret, $oauth_access_token, $oauth_access_token_secret );
-
 		$tweets = $twitterOAuth->get( 'statuses/user_timeline', array( 'screen_name' => $username, 'count' => $limit, 'exclude_replies' => true ) );
-
 		set_transient( $cacheKey, $tweets, 3600 );
-
 		return $tweets;
 	}
 
 	/**
-	 * To make the tweet time more user-friendly
+	 * To make the tweet time more human friendly
 	 */
 	public function tweet_time( $time ) {
 		// Get current timestamp.
