@@ -22,6 +22,10 @@ This plugin uses twitter OAuth api to fetch tweets that are later on cached in d
 1. Upload `quick-and-easy-tweets` to the `/wp-content/plugins/` directory
 1. Activate the plugin through the \'Plugins\' menu in WordPress
 
+== Screenshots ==
+1. Tweets Widget
+1. Front End on Twenty Sixteen Theme
+
 == Changelog ==
 
 = 1.0.0 =
