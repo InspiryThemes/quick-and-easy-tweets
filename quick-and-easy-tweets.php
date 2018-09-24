@@ -4,8 +4,8 @@
  * Plugin URI:        https://github.com/saqibsarwar/quick-and-easy-tweets
  * Description:       A quick and easy way to to display tweets on your website using widget.
  * Version:           1.0.0
- * Author:            M Saqib Sarwar
- * Author URI:        http://saqibsarwar.com/
+ * Author:            Inspiry Themes
+ * Author URI:        https://inspirythemes.com
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:       qaet
@@ -98,28 +98,28 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 		?>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'title' ); ?>">
-				<?php echo __( 'Title', 'qaet' ) . ':'; ?>
+				<?php esc_html_e( 'Title:', 'qaet' ); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>"
 			       type="text" value="<?php if(isset($title)){echo esc_attr( $title );} ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'twitter_username' ); ?>">
-				<?php echo __( 'Twitter Username', 'qaet' ) . ':'; ?>
+				<?php esc_html_e( 'Twitter Username:', 'qaet' ); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'twitter_username' ); ?>" name="<?php echo $this->get_field_name( 'twitter_username' ); ?>"
 			       type="text" value="<?php if(isset($twitter_username)){echo esc_attr( $twitter_username );} ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'update_count' ); ?>">
-				<?php echo __( 'Number of Tweets to Display', 'qaet' ) . ':'; ?>
+				<?php esc_html_e( 'Number of Tweets to Display:', 'qaet' ); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'update_count' ); ?>" name="<?php echo $this->get_field_name( 'update_count' ); ?>"
 			       type="number" value="<?php if(isset($update_count)){echo esc_attr( $update_count );} ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'consumer_key' ); ?>">
-				<?php echo __( 'Consumer Key', 'qaet' ) . ':'; ?>
+				<?php esc_html_e( 'Consumer Key:', 'qaet' ); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'consumer_key' ); ?>" name="<?php echo $this->get_field_name( 'consumer_key' ); ?>"
 			       type="text" value="<?php if(isset($consumer_key)){echo esc_attr( $consumer_key );} ?>" />
@@ -127,21 +127,21 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'consumer_secret' ); ?>">
-				<?php echo __( 'Consumer Secret', 'qaet' ) . ':'; ?>
+				<?php esc_html_e( 'Consumer Secret:', 'qaet' ); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'consumer_secret' ); ?>" name="<?php echo $this->get_field_name( 'consumer_secret' ); ?>"
 			       type="text" value="<?php if(isset($consumer_secret)){echo esc_attr( $consumer_secret );} ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'oauth_access_token' ); ?>">
-				<?php echo __( 'Access Token', 'qaet' ) . ':'; ?>
+				<?php esc_html_e( 'Access Token:', 'qaet' ); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'oauth_access_token' ); ?>" name="<?php echo $this->get_field_name( 'oauth_access_token' ); ?>"
 			       type="text" value="<?php if(isset($oauth_access_token)){echo esc_attr( $oauth_access_token );} ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'oauth_access_token_secret' ); ?>">
-				<?php echo __( 'Access Token Secret', 'qaet' ) . ':'; ?>
+				<?php esc_html_e( 'Access Token Secret:', 'qaet' ); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'oauth_access_token_secret' ); ?>" name="<?php echo $this->get_field_name( 'oauth_access_token_secret' ); ?>"
 			       type="text" value="<?php if(isset($oauth_access_token_secret)){echo esc_attr( $oauth_access_token_secret );} ?>" />
