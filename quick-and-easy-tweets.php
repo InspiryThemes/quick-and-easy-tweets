@@ -77,9 +77,8 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 			echo '</div>';
 
 		} else {
-			_e( 'Problem in getting tweets. Kindly verify the twitter configurations provided in the widget.', 'qaet' );
+			esc_html_e( 'Problem in getting tweets. Kindly verify the twitter configurations provided in the widget.', 'qaet' );
 		}
-
 
 		echo $args['after_widget'];
 	}
