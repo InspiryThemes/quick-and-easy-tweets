@@ -20,8 +20,8 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 			'quick-and-easy-tweets',
-			__( 'Quick and Easy Tweets', 'qaet' ),
-			array ( 'description' => __( 'A widget to display tweets.', 'qaet' ) ) );
+			esc_html__( 'Quick and Easy Tweets', 'qaet' ),
+			array ( 'description' => esc_html__( 'A widget to display tweets.', 'qaet' ) ) );
 	}
 
 
@@ -88,7 +88,7 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 	 * Output widget form
 	 */
 	public function form( $instance ) {
-		$title = ! empty( $instance['title'] ) ? $instance['title'] : __( 'Recent Tweets', 'qaet' );
+		$title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'Recent Tweets', 'qaet' );
 		$twitter_username = ! empty( $instance['twitter_username'] ) ? $instance['twitter_username'] : '';
 		$update_count = ! empty( $instance['update_count'] ) ? $instance['update_count'] : '';
 		$oauth_access_token = ! empty( $instance['oauth_access_token'] ) ? $instance['oauth_access_token'] : '';
@@ -224,46 +224,46 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 
 			// If less than 3 seconds.
 			if ( $difference < 3 ) {
-				return __( 'right now', 'qaet' );
+				return esc_html__( 'right now', 'qaet' );
 			}
 
 			// If less than minute.
 			if ( $difference < $minute ) {
-				return floor( $difference ) . ' ' . __( 'seconds ago', 'qaet' );;
+				return floor( $difference ) . ' ' . esc_html__( 'seconds ago', 'qaet' );;
 			}
 
 			// If less than 2 minutes.
 			if ( $difference < $minute * 2 ) {
-				return __( 'about 1 minute ago', 'qaet' );
+				return esc_html__( 'about 1 minute ago', 'qaet' );
 			}
 
 			// If less than hour.
 			if ( $difference < $hour ) {
-				return floor( $difference / $minute ) . ' ' . __( 'minutes ago', 'qaet' );
+				return floor( $difference / $minute ) . ' ' . esc_html__( 'minutes ago', 'qaet' );
 			}
 
 			// If less than 2 hours.
 			if ( $difference < $hour * 2 ) {
-				return __( 'about 1 hour ago', 'qaet' );
+				return esc_html__( 'about 1 hour ago', 'qaet' );
 			}
 
 			// If less than day.
 			if ( $difference < $day ) {
-				return floor( $difference / $hour ) . ' ' . __( 'hours ago', 'qaet' );
+				return floor( $difference / $hour ) . ' ' . esc_html__( 'hours ago', 'qaet' );
 			}
 
 			// If more than day, but less than 2 days.
 			if ( $difference > $day && $difference < $day * 2 ) {
-				return __( 'yesterday', 'qaet' );;
+				return esc_html__( 'yesterday', 'qaet' );;
 			}
 
 			// If less than year.
 			if ( $difference < $day * 365 ) {
-				return floor( $difference / $day ) . ' ' . __( 'days ago', 'qaet' );
+				return floor( $difference / $day ) . ' ' . esc_html__( 'days ago', 'qaet' );
 			}
 
 			// Else return more than a year.
-			return __( 'over a year ago', 'qaet' );
+			return esc_html__( 'over a year ago', 'qaet' );
 		}
 	}
 
