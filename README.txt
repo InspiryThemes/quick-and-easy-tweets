@@ -2,8 +2,8 @@
 Contributors: inspirythemes, saqibsarwar
 Tags: twitter, tweets, tweets widget, tweets plugin, twitter widget, simple tweets, easy tweets
 Requires at least: 4.6
-Tested up to: 5.2.2
-Stable tag: 1.0.2
+Tested up to: 5.4
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,6 +27,9 @@ This plugin uses twitter OAuth api to fetch tweets that are later on cached in d
 1. Front End on Twenty Sixteen Theme
 
 == Changelog ==
+
+= 1.0.3 =
+* Tested with WordPress 5.4
 
 = 1.0.2 =
 * Tested with WordPress 5.2.2
