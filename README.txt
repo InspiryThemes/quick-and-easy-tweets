@@ -1,5 +1,5 @@
 === Quick and Easy Tweets ===
-Contributors: inspirythemes, saqibsarwar
+Contributors: inspirythemes, saqibsarwar, usmanaliqureshi, fahidjavid
 Tags: twitter, tweets, tweets widget, tweets plugin, twitter widget, simple tweets, easy tweets
 Requires at least: 4.6
 Tested up to: 5.4
