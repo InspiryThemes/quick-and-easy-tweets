@@ -2,15 +2,15 @@
 Contributors: inspirythemes, saqibsarwar, usmanaliqureshi, fahidjavid
 Tags: twitter, tweets, tweets widget, tweets plugin, twitter widget, simple tweets, easy tweets
 Requires at least: 5.0
-Tested up to: 5.9.2
-Stable tag: 1.0.4
+Tested up to: 6.2.2
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 A quick and easy way to to display tweets on your website using widget.
 
 == Description ==
-This plugin uses twitter OAuth api to fetch tweets that are later on cached in database and displayed in a widget with very simple layout.
+This plugin uses Twitter OAuth api to fetch tweets that are later on cached in database and displayed in a widget with a simple but good-looking layout.
 
 ### Links
 
@@ -27,6 +27,11 @@ This plugin uses twitter OAuth api to fetch tweets that are later on cached in d
 1. Front End on Twenty Sixteen Theme
 
 == Changelog ==
+
+= 1.0.5 =
+* Minor improvements in plugin doc and information
+* Updated language file
+* Tested plugin with WordPress 6.2.2
 
 = 1.0.4 =
 * Tested with WordPress 5.9.2
