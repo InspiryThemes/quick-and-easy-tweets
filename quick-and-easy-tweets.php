@@ -2,9 +2,9 @@
 /**
  * Plugin Name:       Quick and Easy Tweets
  * Plugin URI:        https://github.com/saqibsarwar/quick-and-easy-tweets
- * Description:       A quick and easy way to to display tweets on your website using widget.
- * Version:           1.0.3
- * Author:            Inspiry Themes
+ * Description:       A quick and easy way to display tweets on your website via widget.
+ * Version:           1.0.5
+ * Author:            InspiryThemes
  * Author URI:        https://inspirythemes.com
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
@@ -122,7 +122,7 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'consumer_key' ); ?>" name="<?php echo $this->get_field_name( 'consumer_key' ); ?>"
 			       type="text" value="<?php if(isset($consumer_key)){echo esc_attr( $consumer_key );} ?>" />
-			<small> <a target="_blank" href="https://apps.twitter.com/app/new">Click here to create new twitter application</a> to get your Consumer Key, Consumer Secret, Access Token and Access Token Secret.</small>
+			<small> <a target="_blank" href="https://developer.twitter.com/en/apps">Click here to create new twitter application</a> to get your Consumer Key, Consumer Secret, Access Token and Access Token Secret.</small>
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'consumer_secret' ); ?>">
