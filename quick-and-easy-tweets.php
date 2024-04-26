@@ -3,7 +3,9 @@
  * Plugin Name:       Quick and Easy Tweets
  * Plugin URI:        https://github.com/saqibsarwar/quick-and-easy-tweets
  * Description:       A quick and easy way to display tweets on your website via widget.
- * Version:           1.0.5
+ * Version:           1.0.6
+ * Tested up to:      6.5.2
+ * Requires PHP:      5.6
  * Author:            InspiryThemes
  * Author URI:        https://inspirythemes.com
  * License:           GPL-2.0+
