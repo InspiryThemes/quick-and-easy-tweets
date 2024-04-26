@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Quick and Easy Tweets\n"
-"POT-Creation-Date: 2023-06-06 19:52+0500\n"
+"POT-Creation-Date: 2024-04-26 09:52+0500\n"
 "PO-Revision-Date: 2018-09-24 22:30+0500\n"
 "Last-Translator: M Saqib Sarwar <saqib@inspirythemes.com>\n"
 "Language-Team: M Saqib Sarwar <saqib@inspirythemes.com>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.4.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: quick-and-easy-tweets.php\n"
@@ -109,11 +109,11 @@ msgid "https://github.com/saqibsarwar/quick-and-easy-tweets"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "A quick and easy way to to display tweets on your website using widget."
+msgid "A quick and easy way to display tweets on your website via widget."
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Inspiry Themes"
+msgid "InspiryThemes"
 msgstr ""
 
 #. Author URI of the plugin/theme
