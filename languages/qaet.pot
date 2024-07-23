@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Quick and Easy Tweets\n"
-"POT-Creation-Date: 2024-04-26 09:52+0500\n"
+"POT-Creation-Date: 2024-07-23 09:29+0500\n"
 "PO-Revision-Date: 2018-09-24 22:30+0500\n"
 "Last-Translator: M Saqib Sarwar <saqib@inspirythemes.com>\n"
 "Language-Team: M Saqib Sarwar <saqib@inspirythemes.com>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.4.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: quick-and-easy-tweets.php\n"
@@ -22,85 +22,85 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #. Plugin Name of the plugin/theme
-#: quick-and-easy-tweets.php:23
+#: quick-and-easy-tweets.php:25
 msgid "Quick and Easy Tweets"
 msgstr ""
 
-#: quick-and-easy-tweets.php:24
+#: quick-and-easy-tweets.php:26
 msgid "A widget to display tweets."
 msgstr ""
 
-#: quick-and-easy-tweets.php:80
+#: quick-and-easy-tweets.php:82
 msgid ""
 "Problem in getting tweets. Kindly verify the twitter configurations provided "
 "in the widget."
 msgstr ""
 
-#: quick-and-easy-tweets.php:90
+#: quick-and-easy-tweets.php:92
 msgid "Recent Tweets"
 msgstr ""
 
-#: quick-and-easy-tweets.php:100
+#: quick-and-easy-tweets.php:102
 msgid "Title:"
 msgstr ""
 
-#: quick-and-easy-tweets.php:107
+#: quick-and-easy-tweets.php:109
 msgid "Twitter Username:"
 msgstr ""
 
-#: quick-and-easy-tweets.php:114
+#: quick-and-easy-tweets.php:116
 msgid "Number of Tweets to Display:"
 msgstr ""
 
-#: quick-and-easy-tweets.php:121
+#: quick-and-easy-tweets.php:123
 msgid "Consumer Key:"
 msgstr ""
 
-#: quick-and-easy-tweets.php:129
+#: quick-and-easy-tweets.php:131
 msgid "Consumer Secret:"
 msgstr ""
 
-#: quick-and-easy-tweets.php:136
+#: quick-and-easy-tweets.php:138
 msgid "Access Token:"
 msgstr ""
 
-#: quick-and-easy-tweets.php:143
+#: quick-and-easy-tweets.php:145
 msgid "Access Token Secret:"
 msgstr ""
 
-#: quick-and-easy-tweets.php:226
+#: quick-and-easy-tweets.php:228
 msgid "right now"
 msgstr ""
 
-#: quick-and-easy-tweets.php:231
+#: quick-and-easy-tweets.php:233
 msgid "seconds ago"
 msgstr ""
 
-#: quick-and-easy-tweets.php:236
+#: quick-and-easy-tweets.php:238
 msgid "about 1 minute ago"
 msgstr ""
 
-#: quick-and-easy-tweets.php:241
+#: quick-and-easy-tweets.php:243
 msgid "minutes ago"
 msgstr ""
 
-#: quick-and-easy-tweets.php:246
+#: quick-and-easy-tweets.php:248
 msgid "about 1 hour ago"
 msgstr ""
 
-#: quick-and-easy-tweets.php:251
+#: quick-and-easy-tweets.php:253
 msgid "hours ago"
 msgstr ""
 
-#: quick-and-easy-tweets.php:256
+#: quick-and-easy-tweets.php:258
 msgid "yesterday"
 msgstr ""
 
-#: quick-and-easy-tweets.php:261
+#: quick-and-easy-tweets.php:263
 msgid "days ago"
 msgstr ""
 
-#: quick-and-easy-tweets.php:265
+#: quick-and-easy-tweets.php:267
 msgid "over a year ago"
 msgstr ""
 

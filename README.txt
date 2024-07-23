@@ -1,9 +1,9 @@
 === Quick and Easy Tweets ===
 Contributors: inspirythemes, saqibsarwar, usmanaliqureshi, fahidjavid
-Tags: twitter, tweets, tweets widget, tweets plugin, twitter widget, simple tweets, easy tweets
-Requires at least: 5.0
-Tested up to: 6.5.2
-Stable tag: 1.0.6
+Tags: X, Tweets, Tweets widget, X widget, Easy tweets
+Requires at least: 6.0
+Tested up to: 6.6.0
+Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,6 +27,12 @@ This plugin uses Twitter OAuth api to fetch tweets that are later on cached in d
 1. Front End on Twenty Sixteen Theme
 
 == Changelog ==
+
+= 1.0.7 =
+* Improved entry file information
+* Improved readme.txt and readme.md file
+* Updated language file
+* Tested plugin with WordPress 6.6.0
 
 = 1.0.6 =
 * Improved entry file information
