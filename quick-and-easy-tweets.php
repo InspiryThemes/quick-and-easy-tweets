@@ -14,6 +14,14 @@
  * Domain Path:       /languages
  */
 
+// If this file is called directly, abort.
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+
+// Plugin text domain.
+define( 'QE_TWEETS_TEXT_DOMAIN', 'qaet' );
+
 class Quick_And_Easy_Tweets extends WP_Widget {
 
 	/**
