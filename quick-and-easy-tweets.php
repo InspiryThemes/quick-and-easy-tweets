@@ -293,7 +293,7 @@ add_action( 'widgets_init', 'register_quick_and_easy_tweets_widget' );
  * Load plugin text domain.
  */
 function qaet_load_textdomain() {
-	load_plugin_textdomain( 'qaet', false, plugin_basename( dirname( __FILE__ ) ) . '/languages/' );
+	load_plugin_textdomain( QE_TWEETS_TEXT_DOMAIN, false, plugin_basename( dirname( __FILE__ ) ) . '/languages/' );
 }
 
 add_action( 'plugins_loaded', 'qaet_load_textdomain' );
