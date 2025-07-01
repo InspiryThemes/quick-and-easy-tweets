@@ -30,8 +30,8 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 	public function __construct() {
 		parent::__construct(
 			'quick-and-easy-tweets',
-			esc_html__( 'Quick and Easy Tweets', 'qaet' ),
-			array ( 'description' => esc_html__( 'A widget to display tweets.', 'qaet' ) ) );
+			esc_html__( 'Quick and Easy Tweets', QE_TWEETS_TEXT_DOMAIN ),
+			array ( 'description' => esc_html__( 'A widget to display tweets.', QE_TWEETS_TEXT_DOMAIN ) ) );
 	}
 
 
@@ -87,7 +87,7 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 			echo '</div>';
 
 		} else {
-			esc_html_e( 'Problem in getting tweets. Kindly verify the twitter configurations provided in the widget.', 'qaet' );
+			esc_html_e( 'Problem in getting tweets. Kindly verify the twitter configurations provided in the widget.', QE_TWEETS_TEXT_DOMAIN );
 		}
 
 		echo $args['after_widget'];
@@ -97,7 +97,7 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 	 * Output widget form
 	 */
 	public function form( $instance ) {
-		$title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'Recent Tweets', 'qaet' );
+		$title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'Recent Tweets', QE_TWEETS_TEXT_DOMAIN );
 		$twitter_username = ! empty( $instance['twitter_username'] ) ? $instance['twitter_username'] : '';
 		$update_count = ! empty( $instance['update_count'] ) ? $instance['update_count'] : '';
 		$oauth_access_token = ! empty( $instance['oauth_access_token'] ) ? $instance['oauth_access_token'] : '';
@@ -107,28 +107,28 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 		?>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'title' ); ?>">
-				<?php esc_html_e( 'Title:', 'qaet' ); ?>
+				<?php esc_html_e( 'Title:', QE_TWEETS_TEXT_DOMAIN ); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>"
 			       type="text" value="<?php if(isset($title)){echo esc_attr( $title );} ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'twitter_username' ); ?>">
-				<?php esc_html_e( 'Twitter Username:', 'qaet' ); ?>
+				<?php esc_html_e( 'Twitter Username:', QE_TWEETS_TEXT_DOMAIN ); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'twitter_username' ); ?>" name="<?php echo $this->get_field_name( 'twitter_username' ); ?>"
 			       type="text" value="<?php if(isset($twitter_username)){echo esc_attr( $twitter_username );} ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'update_count' ); ?>">
-				<?php esc_html_e( 'Number of Tweets to Display:', 'qaet' ); ?>
+				<?php esc_html_e( 'Number of Tweets to Display:', QE_TWEETS_TEXT_DOMAIN ); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'update_count' ); ?>" name="<?php echo $this->get_field_name( 'update_count' ); ?>"
 			       type="number" value="<?php if(isset($update_count)){echo esc_attr( $update_count );} ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'consumer_key' ); ?>">
-				<?php esc_html_e( 'Consumer Key:', 'qaet' ); ?>
+				<?php esc_html_e( 'Consumer Key:', QE_TWEETS_TEXT_DOMAIN ); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'consumer_key' ); ?>" name="<?php echo $this->get_field_name( 'consumer_key' ); ?>"
 			       type="text" value="<?php if(isset($consumer_key)){echo esc_attr( $consumer_key );} ?>" />
@@ -136,21 +136,21 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'consumer_secret' ); ?>">
-				<?php esc_html_e( 'Consumer Secret:', 'qaet' ); ?>
+				<?php esc_html_e( 'Consumer Secret:', QE_TWEETS_TEXT_DOMAIN ); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'consumer_secret' ); ?>" name="<?php echo $this->get_field_name( 'consumer_secret' ); ?>"
 			       type="text" value="<?php if(isset($consumer_secret)){echo esc_attr( $consumer_secret );} ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'oauth_access_token' ); ?>">
-				<?php esc_html_e( 'Access Token:', 'qaet' ); ?>
+				<?php esc_html_e( 'Access Token:', QE_TWEETS_TEXT_DOMAIN ); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'oauth_access_token' ); ?>" name="<?php echo $this->get_field_name( 'oauth_access_token' ); ?>"
 			       type="text" value="<?php if(isset($oauth_access_token)){echo esc_attr( $oauth_access_token );} ?>" />
 		</p>
 		<p>
 			<label for="<?php echo $this->get_field_id( 'oauth_access_token_secret' ); ?>">
-				<?php esc_html_e( 'Access Token Secret:', 'qaet' ); ?>
+				<?php esc_html_e( 'Access Token Secret:', QE_TWEETS_TEXT_DOMAIN ); ?>
 			</label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'oauth_access_token_secret' ); ?>" name="<?php echo $this->get_field_name( 'oauth_access_token_secret' ); ?>"
 			       type="text" value="<?php if(isset($oauth_access_token_secret)){echo esc_attr( $oauth_access_token_secret );} ?>" />
@@ -233,46 +233,46 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 
 			// If less than 3 seconds.
 			if ( $difference < 3 ) {
-				return esc_html__( 'right now', 'qaet' );
+				return esc_html__( 'right now', QE_TWEETS_TEXT_DOMAIN );
 			}
 
 			// If less than minute.
 			if ( $difference < $minute ) {
-				return floor( $difference ) . ' ' . esc_html__( 'seconds ago', 'qaet' );;
+				return floor( $difference ) . ' ' . esc_html__( 'seconds ago', QE_TWEETS_TEXT_DOMAIN );;
 			}
 
 			// If less than 2 minutes.
 			if ( $difference < $minute * 2 ) {
-				return esc_html__( 'about 1 minute ago', 'qaet' );
+				return esc_html__( 'about 1 minute ago', QE_TWEETS_TEXT_DOMAIN );
 			}
 
 			// If less than hour.
 			if ( $difference < $hour ) {
-				return floor( $difference / $minute ) . ' ' . esc_html__( 'minutes ago', 'qaet' );
+				return floor( $difference / $minute ) . ' ' . esc_html__( 'minutes ago', QE_TWEETS_TEXT_DOMAIN );
 			}
 
 			// If less than 2 hours.
 			if ( $difference < $hour * 2 ) {
-				return esc_html__( 'about 1 hour ago', 'qaet' );
+				return esc_html__( 'about 1 hour ago', QE_TWEETS_TEXT_DOMAIN );
 			}
 
 			// If less than day.
 			if ( $difference < $day ) {
-				return floor( $difference / $hour ) . ' ' . esc_html__( 'hours ago', 'qaet' );
+				return floor( $difference / $hour ) . ' ' . esc_html__( 'hours ago', QE_TWEETS_TEXT_DOMAIN );
 			}
 
 			// If more than day, but less than 2 days.
 			if ( $difference > $day && $difference < $day * 2 ) {
-				return esc_html__( 'yesterday', 'qaet' );;
+				return esc_html__( 'yesterday', QE_TWEETS_TEXT_DOMAIN );;
 			}
 
 			// If less than year.
 			if ( $difference < $day * 365 ) {
-				return floor( $difference / $day ) . ' ' . esc_html__( 'days ago', 'qaet' );
+				return floor( $difference / $day ) . ' ' . esc_html__( 'days ago', QE_TWEETS_TEXT_DOMAIN );
 			}
 
 			// Else return more than a year.
-			return esc_html__( 'over a year ago', 'qaet' );
+			return esc_html__( 'over a year ago', QE_TWEETS_TEXT_DOMAIN );
 		}
 	}
 
