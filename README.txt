@@ -2,8 +2,8 @@
 Contributors: inspirythemes, saqibsarwar, usmanaliqureshi, fahidjavid
 Tags: X, Tweets, Tweets widget, X widget, Easy tweets
 Requires at least: 6.0
-Tested up to: 6.6.0
-Stable tag: 1.0.7
+Tested up to: 6.8.1
+Stable tag: 1.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -27,6 +27,12 @@ This plugin uses Twitter OAuth api to fetch tweets that are later on cached in d
 1. Front End on Twenty Sixteen Theme
 
 == Changelog ==
+
+= 1.0.8 =
+* Improved the text-domain functionality for better compatibility
+* Improved gettext translation throughout the plugin
+* Updated language POT file
+* Tested plugin with WordPress 6.8.1
 
 = 1.0.7 =
 * Improved entry file information
