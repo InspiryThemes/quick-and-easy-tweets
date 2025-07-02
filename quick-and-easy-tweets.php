@@ -238,7 +238,7 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 
 			// If less than minute.
 			if ( $difference < $minute ) {
-				return floor( $difference ) . ' ' . esc_html__( 'seconds ago', QE_TWEETS_TEXT_DOMAIN );;
+				return floor( $difference ) . ' ' . esc_html__( 'seconds ago', QE_TWEETS_TEXT_DOMAIN );
 			}
 
 			// If less than 2 minutes.
@@ -263,7 +263,7 @@ class Quick_And_Easy_Tweets extends WP_Widget {
 
 			// If more than day, but less than 2 days.
 			if ( $difference > $day && $difference < $day * 2 ) {
-				return esc_html__( 'yesterday', QE_TWEETS_TEXT_DOMAIN );;
+				return esc_html__( 'yesterday', QE_TWEETS_TEXT_DOMAIN );
 			}
 
 			// If less than year.
