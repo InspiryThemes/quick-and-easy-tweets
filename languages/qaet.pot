@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Quick and Easy Tweets\n"
-"POT-Creation-Date: 2024-07-23 09:29+0500\n"
+"POT-Creation-Date: 2025-07-02 22:04+0500\n"
 "PO-Revision-Date: 2018-09-24 22:30+0500\n"
 "Last-Translator: M Saqib Sarwar <saqib@inspirythemes.com>\n"
 "Language-Team: M Saqib Sarwar <saqib@inspirythemes.com>\n"
@@ -10,97 +10,96 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.6\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: quick-and-easy-tweets.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
 #. Plugin Name of the plugin/theme
-#: quick-and-easy-tweets.php:25
+#: quick-and-easy-tweets.php:33
 msgid "Quick and Easy Tweets"
 msgstr ""
 
-#: quick-and-easy-tweets.php:26
+#: quick-and-easy-tweets.php:34
 msgid "A widget to display tweets."
 msgstr ""
 
-#: quick-and-easy-tweets.php:82
+#: quick-and-easy-tweets.php:90
 msgid ""
 "Problem in getting tweets. Kindly verify the twitter configurations provided "
 "in the widget."
 msgstr ""
 
-#: quick-and-easy-tweets.php:92
+#: quick-and-easy-tweets.php:100
 msgid "Recent Tweets"
 msgstr ""
 
-#: quick-and-easy-tweets.php:102
+#: quick-and-easy-tweets.php:110
 msgid "Title:"
 msgstr ""
 
-#: quick-and-easy-tweets.php:109
+#: quick-and-easy-tweets.php:117
 msgid "Twitter Username:"
 msgstr ""
 
-#: quick-and-easy-tweets.php:116
+#: quick-and-easy-tweets.php:124
 msgid "Number of Tweets to Display:"
 msgstr ""
 
-#: quick-and-easy-tweets.php:123
+#: quick-and-easy-tweets.php:131
 msgid "Consumer Key:"
 msgstr ""
 
-#: quick-and-easy-tweets.php:131
+#: quick-and-easy-tweets.php:139
 msgid "Consumer Secret:"
 msgstr ""
 
-#: quick-and-easy-tweets.php:138
+#: quick-and-easy-tweets.php:146
 msgid "Access Token:"
 msgstr ""
 
-#: quick-and-easy-tweets.php:145
+#: quick-and-easy-tweets.php:153
 msgid "Access Token Secret:"
 msgstr ""
 
-#: quick-and-easy-tweets.php:228
+#: quick-and-easy-tweets.php:236
 msgid "right now"
 msgstr ""
 
-#: quick-and-easy-tweets.php:233
+#: quick-and-easy-tweets.php:241
 msgid "seconds ago"
 msgstr ""
 
-#: quick-and-easy-tweets.php:238
+#: quick-and-easy-tweets.php:246
 msgid "about 1 minute ago"
 msgstr ""
 
-#: quick-and-easy-tweets.php:243
+#: quick-and-easy-tweets.php:251
 msgid "minutes ago"
 msgstr ""
 
-#: quick-and-easy-tweets.php:248
+#: quick-and-easy-tweets.php:256
 msgid "about 1 hour ago"
 msgstr ""
 
-#: quick-and-easy-tweets.php:253
+#: quick-and-easy-tweets.php:261
 msgid "hours ago"
 msgstr ""
 
-#: quick-and-easy-tweets.php:258
+#: quick-and-easy-tweets.php:266
 msgid "yesterday"
 msgstr ""
 
-#: quick-and-easy-tweets.php:263
+#: quick-and-easy-tweets.php:271
 msgid "days ago"
 msgstr ""
 
-#: quick-and-easy-tweets.php:267
+#: quick-and-easy-tweets.php:275
 msgid "over a year ago"
 msgstr ""
 
